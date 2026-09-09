@@ -544,6 +544,30 @@ platform**, not a model or vector database.
 
 ------------------------------------------------------------------------
 
+# Step 16 — Advanced AI
+
+### Study
+
+-  Fine-tuning
+-  LoRA / PEFT
+-  Open-source LLMs
+-  Local LLMs
+-  Quantization
+-  GPU inference
+-  Model serving
+-  AI infrastructure
+
+### Tools / Technologies
+
+-  Hugging Face
+-  PyTorch
+-  Ollama
+-  vLLM
+-  Transformers
+-  LoRA / PEFT
+
+------------------------------------------------------------------------
+
 # Where Each Major Tool Fits
 
   Tool / Technology   Main Area
