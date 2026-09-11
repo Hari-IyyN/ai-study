@@ -1,0 +1,45 @@
+Token
+More tokens more time,
+More tokens more expensive.
+
+2017 la "Attention Is All You Need" inra google white paper to -> transformer introduce pannanga.
+
+so tokens aa intelligent aa use pannom na answers seekirama varum
+chatGPT-5 128k tokens for our question and respond size (like 300 to 400 page book size)
+
+Your question = 10 tokens
+
+My answer = 90 tokens
+Then total = 100 tokens used in that chat turn.
+
+Why it matters
+
+Because the model has a maximum context size (128k tokens for GPT-5) — meaning it can remember roughly 100,000 words in one conversation before older parts get “forgotten” or truncated. context aa maranthum
+
+VOCAB:
+Tokenizer kulla vocab -> dictionary irukkum, namma separate panna words antha vocab la poi pakum atha lookup nu solluvanga.
+Intha Vocab json or binary file aa irukkum -> namma use panra model aa poruthu.
+also the json vocab size also 128k so avlo vocabs athukulla irukkum.
+Intha vocab file local illana cloud or server  la vachi maintain pannuvanga.
+
+MERGE
+yen ippadi pannu nu tha, vera new word varum pothu athukku sub word same aa irukkum so again panna theva illa, ithave use pannikkalam atha..
+1st merge file eluthum, next vocab pogum, vocab la ID irukkum, merge file la ID irukkathu.
+
+
+
+
+byte Pare Encoding Algorithm (Number generate) -> chatGPT la use panra tokens number generate panra algorithm,and antha vocab file & MERGE file pannum, vera vera model poruthu ithu marum, but intha chatGPT model la oru word kku oru tokenId vantha athu eppovum marathu appadiye irukkum.
+another algorithm example "sentencepiece" and "wordpiece"
+
+ChatGPT Flow
+
+MyQuestion -> Tokenizer -> Tokens(word) -> TokenID(Number) -> Transformer -> Output
+
+Also the Transformer send encoded(Number), so we again we use Tokenizer use panni decode panni tha output kudukkum.
+tokens -> tokenizer  
+
+
+
+
+https://colab.research.google.com/drive/1dzf1wuNaZJqR8c3b_Mb-pILpFpOfadmR
