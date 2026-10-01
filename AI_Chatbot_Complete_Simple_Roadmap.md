@@ -3,116 +3,133 @@
 > High-level checklist: what to study + which tools/technologies belong
 > to each topic.
 
-------------------------------------------------------------------------
+---
 
 ## Step 1 --- AI & LLM Fundamentals
 
 ### Study
 
--   AI / Generative AI
--   LLM
--   Tokens
--   Context window
--   Inference
--   Training vs inference
--   Transformer basics
--   Hallucination
--   Model limitations
+- AI / Generative AI
+- LLM
+- Tokens
+- Context window
+- Inference
+- Training vs inference
+- Transformer basics
+- Hallucination
 
 ### Tools / Technologies
 
--   OpenAI
--   Anthropic
--   Google Gemini
--   Open-source LLMs
--   Hugging Face
+- OpenAI
+- Anthropic
+- Google Gemini
+- Open-source LLMs
+- Hugging Face
 
 **Goal:** Understand how LLM-based applications work.
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 2 --- LLM APIs & SDKs
 
+
+
 ### Study
 
--   API keys
--   Environment variables
--   API request / response
--   Model selection
--   Streaming
--   Token limits
--   Rate limits
--   Retries
--   Error handling
--   Cost management
+- API keys
+- Environment variables
+- API request / response
+- Model selection
+- Streaming
+- Token limits
+- Rate limits
+- Retries
+- Error handling
+- Cost management
+
+
 
 ### Tools / Technologies
 
--   OpenAI API / SDK
--   OpenRouter
--   Anthropic API
--   Google Gemini API
--   Python SDK
--   Node.js / TypeScript SDK
+- OpenAI API / SDK
+- OpenRouter
+- Anthropic API
+- Google Gemini API
+- Python SDK
+- Node.js / TypeScript SDK
 
 **Practice:**
 
-``` text
+```text
 Application → LLM API → Model → Response
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 3 --- Prompt Engineering
 
+
+
 ### Study
 
--   System instructions
--   Developer instructions
--   User messages
--   Prompt structure
--   Few-shot prompting
--   Prompt templates
--   Structured output
--   JSON output
--   Prompt versioning
+- System instructions
+- Developer instructions
+- User messages
+- Prompt structure
+- Few-shot prompting
+- Prompt templates
+- Structured output
+- JSON output
+- Prompt versioning
+
+
 
 ### Tools / Technologies
 
--   OpenAI Responses API
--   LangChain Prompts
--   Prompt templates
--   Structured output / JSON Schema
--   LangSmith for prompt testing and tracing
+- OpenAI Responses API
+- LangChain Prompts
+- Prompt templates
+- Structured output / JSON Schema
+- LangSmith for prompt testing and tracing
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 4 --- Basic AI Chatbot
 
+
+
 ### Study
 
--   Chat UI
--   Message roles
--   Conversation history
--   Sessions
--   Streaming
--   Chat persistence
--   Authentication
--   Context management
+- Chat UI
+- Message roles
+- Conversation history
+- Sessions
+- Streaming
+- Chat persistence
+- Authentication
+- Context management
+
+
 
 ### Tools / Technologies
 
--   React / Next.js
--   Node.js + TypeScript
--   Python + FastAPI
--   OpenAI SDK
--   WebSocket / Server-Sent Events
--   PostgreSQL
--   Redis
+- React / Next.js
+- Node.js + TypeScript
+- Python + FastAPI
+- OpenAI SDK
+- WebSocket / Server-Sent Events
+- PostgreSQL
+- Redis
 
 **Flow:**
 
-``` text
+```text
 Frontend
    ↓
 Backend
@@ -124,58 +141,72 @@ Backend
 Frontend
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 5 --- Database & Chat History
 
+
+
 ### Study
 
--   Users
--   Conversations
--   Messages
--   Sessions
--   Authentication
--   Authorization
--   Chat history
--   Database relationships
+- Users
+- Conversations
+- Messages
+- Sessions
+- Authentication
+- Authorization
+- Chat history
+- Database relationships
+
+
 
 ### Databases / Tools
 
--   PostgreSQL
--   MySQL
--   MongoDB
--   Redis
+- PostgreSQL
+- MySQL
+- MongoDB
+- Redis
+
+
 
 ### Recommended
 
--   PostgreSQL for main application data
--   Redis for cache / temporary state
+- PostgreSQL for main application data
+- Redis for cache / temporary state
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 6 --- Embeddings
 
+
+
 ### Study
 
--   Embeddings
--   Text → vector
--   Semantic similarity
--   Chunking
--   Metadata
--   Similarity search
+- Embeddings
+- Text → vector
+- Semantic similarity
+- Chunking
+- Metadata
+- Similarity search
+
+
 
 ### Tools / Technologies
 
--   OpenAI Embeddings
--   Google Embeddings
--   Hugging Face embedding models
--   Sentence Transformers
--   LangChain embeddings
--   LlamaIndex embeddings
+- OpenAI Embeddings
+- Google Embeddings
+- Hugging Face embedding models
+- Sentence Transformers
+- LangChain embeddings
+- LlamaIndex embeddings
 
 **Flow:**
 
-``` text
+```text
 Document
    ↓
 Chunks
@@ -185,83 +216,103 @@ Embedding Model
 Vectors
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 7 --- Vector Database
 
+
+
 ### Study
 
--   Vector storage
--   Vector indexing
--   Similarity search
--   Metadata filtering
--   Hybrid search
--   Top-K retrieval
+- Vector storage
+- Vector indexing
+- Similarity search
+- Metadata filtering
+- Hybrid search
+- Top-K retrieval
+
+
 
 ### Vector Databases
 
--   PostgreSQL + pgvector
--   Qdrant
--   Pinecone
--   Weaviate
--   Milvus
--   Chroma
+- PostgreSQL + pgvector
+- Qdrant
+- Pinecone
+- Weaviate
+- Milvus
+- Chroma
+
+
 
 ### Framework Support
 
--   LangChain vector stores
--   LlamaIndex vector stores
+- LangChain vector stores
+- LlamaIndex vector stores
+
+
 
 ### Recommended Starting Point
 
--   PostgreSQL + pgvector if your application already uses PostgreSQL
--   Qdrant / Pinecone when you want a dedicated vector database
+- PostgreSQL + pgvector if your application already uses PostgreSQL
+- Qdrant / Pinecone when you want a dedicated vector database
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 8 --- RAG
 
+
+
 ### RAG Concepts
 
--   Retrieval Augmented Generation
--   Document ingestion
--   Document parsing
--   Chunking
--   Embeddings
--   Vector search
--   Retrieval
--   Reranking
--   Context building
--   Prompt + retrieved context
--   Citations / sources
--   RAG evaluation
+- Retrieval Augmented Generation
+- Document ingestion
+- Document parsing
+- Chunking
+- Embeddings
+- Vector search
+- Retrieval
+- Reranking
+- Context building
+- Prompt + retrieved context
+- Citations / sources
+- RAG evaluation
+
+
 
 ### RAG Tools / Frameworks
 
--   LangChain
--   LlamaIndex
--   Haystack
+- LangChain
+- LlamaIndex
+- Haystack
+
+
 
 ### Document Tools
 
--   PDF parsers
--   DOCX parsers
--   CSV parsers
--   HTML / web loaders
--   Markdown loaders
+- PDF parsers
+- DOCX parsers
+- CSV parsers
+- HTML / web loaders
+- Markdown loaders
+
+
 
 ### Vector DBs Used with RAG
 
--   PostgreSQL + pgvector
--   Qdrant
--   Pinecone
--   Weaviate
--   Milvus
--   Chroma
+- PostgreSQL + pgvector
+- Qdrant
+- Pinecone
+- Weaviate
+- Milvus
+- Chroma
 
 **RAG Flow:**
 
-``` text
+```text
 Documents
    ↓
 Parsing
@@ -283,35 +334,41 @@ LLM
 Answer + Sources
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 9 --- Tool Calling / Function Calling
 
+
+
 ### Study
 
--   Function calling
--   Tool definitions
--   Tool parameters
--   Tool results
--   API tools
--   Database tools
--   Web search
--   Validation
--   Permissions
--   Tool errors
+- Function calling
+- Tool definitions
+- Tool parameters
+- Tool results
+- API tools
+- Database tools
+- Web search
+- Validation
+- Permissions
+- Tool errors
+
+
 
 ### Tools / Technologies
 
--   OpenAI tool calling
--   Anthropic tool use
--   LangChain Tools
--   MCP (Model Context Protocol)
--   REST APIs
--   Database functions
+- OpenAI tool calling
+- Anthropic tool use
+- LangChain Tools
+- MCP (Model Context Protocol)
+- REST APIs
+- Database functions
 
 **Flow:**
 
-``` text
+```text
 User
  ↓
 LLM
@@ -327,23 +384,31 @@ LLM
 Final Answer
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 10 --- AI Agents
 
+
+
 ### Study
 
--   Agent concept
--   Agent loop
--   Planning
--   Tool selection
--   Multi-step tasks
--   State
--   Memory
--   Human approval
--   Guardrails
+- Agent concept
+- Agent loop
+- Planning
+- Tool selection
+- Multi-step tasks
+- State
+- Memory
+- Human approval
+- Guardrails
+
+
 
 ### Frameworks
+
+
 
 #### LangChain
 
@@ -363,7 +428,7 @@ Knowledge-base applications - Agent + data workflows
 
 **Agent Flow:**
 
-``` text
+```text
 User
  ↓
 Agent
@@ -379,48 +444,60 @@ Next Step
 Final Answer
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 11 --- AI Memory
 
+
+
 ### Study
 
--   Conversation memory
--   Short-term memory
--   Long-term memory
--   User preferences
--   Conversation summaries
--   Memory storage
--   Memory retrieval
--   Privacy
+- Conversation memory
+- Short-term memory
+- Long-term memory
+- User preferences
+- Conversation summaries
+- Memory storage
+- Memory retrieval
+- Privacy
+
+
 
 ### Storage / Tools
 
--   PostgreSQL
--   Redis
--   Vector databases
--   LangChain memory patterns
--   LangGraph state / persistence
+- PostgreSQL
+- Redis
+- Vector databases
+- LangChain memory patterns
+- LangGraph state / persistence
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 12 --- AI Orchestration
 
+
+
 ### Study
 
--   LLM workflows
--   Chains
--   Tool workflows
--   Agent workflows
--   State
--   Routing
--   Conditional execution
--   Human approval
--   Workflow persistence
+- LLM workflows
+- Chains
+- Tool workflows
+- Agent workflows
+- State
+- Routing
+- Conditional execution
+- Human approval
+- Workflow persistence
+
+
 
 ### Main Frameworks
 
-``` text
+```text
 LangChain
 → Components + LLM apps + tools + RAG
 
@@ -431,43 +508,53 @@ LlamaIndex
 → Data / RAG / knowledge workflows
 ```
 
+
+
 ### When to Learn
 
--   Learn LangChain first
--   Learn LangGraph when building complex agent workflows
--   Learn LlamaIndex when your application is strongly focused on data /
-    RAG
+- Learn LangChain first
+- Learn LangGraph when building complex agent workflows
+- Learn LlamaIndex when your application is strongly focused on data /
+RAG
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 13 --- AI Observability & Evaluation
 
+
+
 ### Study
 
--   Tracing
--   Debugging
--   Prompt testing
--   LLM evaluation
--   RAG evaluation
--   Agent evaluation
--   Hallucination testing
--   Token usage
--   Latency
--   Cost
+- Tracing
+- Debugging
+- Prompt testing
+- LLM evaluation
+- RAG evaluation
+- Agent evaluation
+- Hallucination testing
+- Token usage
+- Latency
+- Cost
+
+
 
 ### Tools
 
--   LangSmith
--   OpenTelemetry
--   Application logs
--   Metrics
--   Tracing platforms
+- LangSmith
+- OpenTelemetry
+- Application logs
+- Metrics
+- Tracing platforms
+
+
 
 ### LangSmith
 
 Use for:
 
-``` text
+```text
 LLM Tracing
       ↓
 Debugging
@@ -482,96 +569,118 @@ Monitoring
 **Important:** LangSmith is mainly an **observability / evaluation
 platform**, not a model or vector database.
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 14 --- AI Security
 
+
+
 ### Study
 
--   API key security
--   Prompt injection
--   Jailbreaks
--   Data leakage
--   Sensitive data
--   Input validation
--   Output validation
--   Tool permissions
--   Authorization
--   Tenant isolation
--   Rate limiting
--   Guardrails
+- API key security
+- Prompt injection
+- Jailbreaks
+- Data leakage
+- Sensitive data
+- Input validation
+- Output validation
+- Tool permissions
+- Authorization
+- Tenant isolation
+- Rate limiting
+- Guardrails
+
+
 
 ### Tools / Concepts
 
--   Application authentication
--   Authorization
--   Secrets management
--   Input/output validation
--   Guardrail libraries
--   Content moderation
--   Human approval for sensitive actions
+- Application authentication
+- Authorization
+- Secrets management
+- Input/output validation
+- Guardrail libraries
+- Content moderation
+- Human approval for sensitive actions
 
-------------------------------------------------------------------------
+---
+
+
 
 ## Step 15 --- Production AI
 
+
+
 ### Study
 
--   Logging
--   Monitoring
--   Tracing
--   Token usage
--   Cost monitoring
--   Latency
--   Retries
--   Fallback models
--   Model routing
--   Caching
--   Queues
--   Scaling
--   Observability
+- Logging
+- Monitoring
+- Tracing
+- Token usage
+- Cost monitoring
+- Latency
+- Retries
+- Fallback models
+- Model routing
+- Caching
+- Queues
+- Scaling
+- Observability
+
+
 
 ### Tools / Technologies
 
--   Docker
--   Kubernetes
--   Redis
--   PostgreSQL
--   OpenTelemetry
--   LangSmith
--   Cloud platforms
--   CI/CD
+- Docker
+- Kubernetes
+- Redis
+- PostgreSQL
+- OpenTelemetry
+- LangSmith
+- Cloud platforms
+- CI/CD
 
-------------------------------------------------------------------------
+---
+
+
 
 # Step 16 — Advanced AI
 
+
+
 ### Study
 
--  Fine-tuning
--  LoRA / PEFT
--  Open-source LLMs
--  Local LLMs
--  Quantization
--  GPU inference
--  Model serving
--  AI infrastructure
+- Fine-tuning
+- LoRA / PEFT
+- Open-source LLMs
+- Local LLMs
+- Quantization
+- GPU inference
+- Model serving
+- AI infrastructure
+
+
 
 ### Tools / Technologies
 
--  Hugging Face
--  PyTorch
--  Ollama
--  vLLM
--  Transformers
--  LoRA / PEFT
+- Hugging Face
+- PyTorch
+- Ollama
+- vLLM
+- Transformers
+- LoRA / PEFT
 
-------------------------------------------------------------------------
+---
+
+
 
 # Where Each Major Tool Fits
 
   Tool / Technology   Main Area
-  ------------------- -----------------------------------------
+
+---
+
   OpenAI              LLM / API
   OpenRouter          LLM provider / model routing
   Anthropic           LLM / API
@@ -590,11 +699,13 @@ platform**, not a model or vector database.
   MCP                 Standardized tool / context integration
   OpenTelemetry       Observability / tracing
 
-------------------------------------------------------------------------
+---
+
+
 
 # One AI Chatbot --- Complete Learning Path
 
-``` text
+```text
 1. LLM Basics
       ↓
 2. LLM API
@@ -628,43 +739,53 @@ platform**, not a model or vector database.
 16. Production
 ```
 
-------------------------------------------------------------------------
+---
+
+
 
 # Suggested Project Progression
 
+
+
 ### Project 1 --- Simple AI CLI
 
-``` text
+```text
 Question → LLM → Answer
 ```
 
 Study: - LLM API - API key - SDK - Prompt
 
-------------------------------------------------------------------------
+---
+
+
 
 ### Project 2 --- Basic AI Chatbot
 
-``` text
+```text
 React → Node.js → LLM
 ```
 
 Study: - Chat UI - Backend - Streaming - Conversation history
 
-------------------------------------------------------------------------
+---
+
+
 
 ### Project 3 --- Chatbot with Database
 
-``` text
+```text
 User → Chat → PostgreSQL → LLM
 ```
 
 Study: - Authentication - Users - Conversations - Messages
 
-------------------------------------------------------------------------
+---
+
+
 
 ### Project 4 --- RAG Chatbot
 
-``` text
+```text
 Documents
    ↓
 Embeddings
@@ -679,11 +800,13 @@ LLM
 Study: - Chunking - Embeddings - pgvector / Qdrant - LangChain or
 LlamaIndex
 
-------------------------------------------------------------------------
+---
+
+
 
 ### Project 5 --- AI Assistant
 
-``` text
+```text
 LLM
  ↓
 Tools
@@ -694,11 +817,13 @@ Tools
 
 Study: - Tool calling - APIs - Permissions - LangChain Tools
 
-------------------------------------------------------------------------
+---
+
+
 
 ### Project 6 --- AI Agent
 
-``` text
+```text
 User
  ↓
 LangGraph
@@ -714,11 +839,13 @@ Answer
 
 Study: - Agents - State - Workflows - LangGraph - Human-in-the-loop
 
-------------------------------------------------------------------------
+---
+
+
 
 ### Project 7 --- Production AI Chatbot
 
-``` text
+```text
 Frontend
    ↓
 Backend
@@ -739,11 +866,13 @@ LangSmith / Observability
 Study: - Security - Evaluation - Monitoring - Cost - Scaling -
 Production deployment
 
-------------------------------------------------------------------------
+---
+
+
 
 # Final Mental Model
 
-``` text
+```text
 LLM
  ↓
 API
@@ -776,6 +905,8 @@ Evaluation
  ↓
 Production
 ```
+
+
 
 ## Main Rule
 
