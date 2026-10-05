@@ -6,20 +6,24 @@ More tokens more expensive.
 
 so tokens aa intelligent aa use pannom na answers seekirama varum
 chatGPT-5 128k tokens for our question and respond size (like 300 to 400 page book size)
-
+128K tokens at a time..
 Your question = 10 tokens
 
 My answer = 90 tokens
 Then total = 100 tokens used in that chat turn.
 
+  - 1. 128k json file size -> like 128k token (word, sub words, punctuations ID)
+  - 2. Per session your input and AI output overall tokens 128K
+
 Why it matters
 
 Because the model has a maximum context size (128k tokens for GPT-5) — meaning it can remember roughly 100,000 words in one conversation before older parts get “forgotten” or truncated. context aa maranthum
-
+--- token limit exide aagurathunala, athu antha chat history aa marathutum, some time namma recall pannuvom..
 VOCAB:
 Tokenizer kulla vocab -> dictionary irukkum, namma separate panna words antha vocab la poi pakum atha lookup nu solluvanga.
 Intha Vocab json or binary file aa irukkum -> namma use panra model aa poruthu.
 also the json vocab size also 128k so avlo vocabs athukulla irukkum.
+GPT 1 & 2 la json file aa irunthathu, GPT 3 4 & 5 la binary file aa change pannitanga.
 Intha vocab file local illana cloud or server  la vachi maintain pannuvanga.
 
 MERGE
