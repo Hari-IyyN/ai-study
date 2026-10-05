@@ -5,7 +5,7 @@
 
 ---
 
-## Step 1 --- AI & LLM Fundamentals
+## Step 1 --- AI & LLM Fundamentals ✅
 
 ### Study
 
@@ -30,11 +30,7 @@
 
 ---
 
-
-
-## Step 2 --- LLM APIs & SDKs
-
-
+## Step 2 --- LLM APIs & SDKs ✅
 
 ### Study
 
@@ -70,7 +66,7 @@ Application → LLM API → Model → Response
 
 
 
-## Step 3 --- Prompt Engineering
+## Step 3 --- Prompt Engineering ⏳
 
 
 
