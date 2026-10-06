@@ -540,40 +540,7 @@ Correct principle:
 
 ---
 
-
-
-# 20. Prompt + Context Window
-
-The prompt is only one part of the total context.
-
-```text
-System Instructions
-       +
-User Prompt
-       +
-Chat History
-       +
-RAG Context
-       +
-Tool Results
-       ↓
-Context Window
-       ↓
-LLM
-```
-
-If the context becomes too large:
-
-- Cost can increase
-- Processing can become slower
-- The context limit can be exceeded
-- Important information can receive less focus
-
----
-
-
-
-# 21. Prompt Optimization
+# 20. Prompt Optimization
 
 When optimizing a prompt, check:
 
@@ -590,7 +557,7 @@ When optimizing a prompt, check:
 
 
 
-# 22. Prompt Versioning
+# 21. Prompt Versioning
 
 In a production application, changing a prompt can change output behavior.
 
@@ -617,7 +584,7 @@ Later, tools such as LangSmith can help manage prompt experiments and evaluation
 
 
 
-# 23. Prompt Testing
+# 22. Prompt Testing
 
 Do not test a prompt with only one question.
 
@@ -647,7 +614,7 @@ Multiple test cases are important for evaluating prompt quality.
 
 
 
-# 24. Prompt Injection
+# 23. Prompt Injection
 
 Prompt Injection happens when user input attempts to change the model's intended instructions.
 
@@ -678,7 +645,7 @@ Security will be studied more deeply later in the roadmap.
 
 
 
-# 25. Prompt Engineering + RAG
+# 24. Prompt Engineering + RAG
 
 In RAG, retrieved documents are added to the prompt/context.
 
@@ -711,7 +678,7 @@ This can help reduce unsupported answers, although it does not guarantee zero ha
 
 
 
-# 26. Prompt Engineering + Tools
+# 25. Prompt Engineering + Tools
 
 When using tool calling, prompts/model instructions can describe:
 
@@ -733,7 +700,7 @@ Tool Calling will be studied in depth later.
 
 
 
-# 27. Prompt Engineering + Agents
+# 26. Prompt Engineering + Agents
 
 Agent workflows can use prompts to guide:
 
@@ -767,7 +734,7 @@ Agents are later in our roadmap, so for now understand only this connection.
 
 
 
-# 28. Common Prompt Mistakes
+# 27. Common Prompt Mistakes
 
 
 
@@ -819,7 +786,7 @@ Prompt instructions are not a replacement for:
 
 
 
-# 29. Prompt Engineering in Our Basic AI Chatbot
+# 28. Prompt Engineering in Our Basic AI Chatbot
 
 Our current project:
 
@@ -877,7 +844,7 @@ LLM
 
 
 
-# 30. LangChain Connection
+# 29. LangChain Connection
 
 After understanding Prompt Engineering, we can introduce LangChain.
 
@@ -911,7 +878,7 @@ Focus only on the features that support our AI roadmap.
 
 
 
-# 31. LangSmith Connection
+# 30. LangSmith Connection
 
 LangSmith is mainly useful for:
 
@@ -940,7 +907,7 @@ LangSmith is **not the LLM** and **not a vector database**.
 
 
 
-# 32. Important Mental Model
+# 31. Important Mental Model
 
 ```text
 Task
@@ -964,7 +931,7 @@ Validate Result
 
 
 
-# 33. Developer Checklist
+# 32. Developer Checklist
 
 Before sending a prompt to an LLM, ask:
 
@@ -983,7 +950,7 @@ Before sending a prompt to an LLM, ask:
 
 
 
-# 34. What We Need to Practice
+# 33. What We Need to Practice
 
 For our learning project, practice:
 
@@ -1015,7 +982,7 @@ Test the same prompt with normal and edge-case inputs.
 
 
 
-# 35. Final Summary
+# 34. Final Summary
 
 Prompt Engineering is not about finding one "perfect prompt".
 
