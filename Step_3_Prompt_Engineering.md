@@ -37,6 +37,8 @@ In an application, we define:
 
 ---
 
+
+
 # 2. Why Prompt Engineering is Important
 
 Even when an LLM is powerful, vague instructions can produce inconsistent output.
@@ -52,6 +54,8 @@ A good prompt can help with:
 - Better control over model behavior
 
 ---
+
+
 
 # 3. Prompt vs Normal Question
 
@@ -85,6 +89,8 @@ So the model can understand the expected output more easily.
 
 ---
 
+
+
 # 4. Basic Prompt Structure
 
 A production prompt can contain different parts:
@@ -111,6 +117,8 @@ Use only the parts required for the task.
 
 ---
 
+
+
 # 5. Role
 
 A role defines how the model should approach the task.
@@ -132,6 +140,8 @@ A role can make the expected behavior or perspective clearer.
 However, assigning a role does not guarantee unlimited expertise or capabilities.
 
 ---
+
+
 
 # 6. Context
 
@@ -157,6 +167,8 @@ With useful context, it is easier to generate an application-specific answer.
 
 ---
 
+
+
 # 7. Task / Instruction
 
 The task tells the model directly what it should do.
@@ -180,6 +192,8 @@ The instruction should be clear.
 
 ---
 
+
+
 # 8. Input
 
 Input is the actual data that the model needs to process.
@@ -198,6 +212,8 @@ User → Backend → Prompt Template → LLM
 ```
 
 ---
+
+
 
 # 9. Constraints
 
@@ -224,6 +240,8 @@ Do not include unnecessary explanations.
 Constraints help control the response.
 
 ---
+
+
 
 # 10. Output Format
 
@@ -253,6 +271,8 @@ Predictable structure is very useful in production applications.
 
 ---
 
+
+
 # 11. System / Developer / User Instructions
 
 LLM APIs can support different message roles.
@@ -267,6 +287,8 @@ Example:
 You are a helpful support assistant.
 Do not reveal confidential information.
 ```
+
+
 
 ### User
 
@@ -292,6 +314,8 @@ User input should not be blindly treated as a trusted application instruction.
 
 ---
 
+
+
 # 12. Zero-Shot Prompting
 
 Zero-shot means asking the model to perform a task **without providing examples**.
@@ -307,6 +331,8 @@ Classify this message as Complaint or General Query:
 No examples are provided.
 
 ---
+
+
 
 # 13. Few-Shot Prompting
 
@@ -328,6 +354,8 @@ Classify:
 Examples help the model understand the expected pattern.
 
 ---
+
+
 
 # 14. Zero-Shot vs Few-Shot
 
@@ -359,9 +387,11 @@ However, too many examples increase token usage.
 
 ---
 
+
+
 # 15. Prompt Templates
 
-A Prompt Template is a reusable prompt.
+A prompt template is a reusable text structure with placeholder variables that you fill in at runtime to generate consistent instructions for AI models.
 
 Example:
 
@@ -391,6 +421,8 @@ This is very useful in application development.
 
 ---
 
+
+
 # 16. Why Prompt Templates are Important
 
 Hard-coding the same prompt in many places makes maintenance difficult.
@@ -417,6 +449,8 @@ Benefits:
 Prompt Templates are an important concept in LangChain.
 
 ---
+
+
 
 # 17. Structured Output
 
@@ -452,6 +486,8 @@ Database / API / UI
 
 ---
 
+
+
 # 18. JSON Schema
 
 JSON Schema is a way to define the expected structure.
@@ -475,6 +511,8 @@ Simply saying:
 in the prompt is not always enough.
 
 ---
+
+
 
 # 19. Prompt + Tokens
 
@@ -501,6 +539,8 @@ Correct principle:
 > **Provide only the necessary information clearly.**
 
 ---
+
+
 
 # 20. Prompt + Context Window
 
@@ -531,6 +571,8 @@ If the context becomes too large:
 
 ---
 
+
+
 # 21. Prompt Optimization
 
 When optimizing a prompt, check:
@@ -545,6 +587,8 @@ When optimizing a prompt, check:
 - Is the output easy for the application to process?
 
 ---
+
+
 
 # 22. Prompt Versioning
 
@@ -570,6 +614,8 @@ Versioning helps with:
 Later, tools such as LangSmith can help manage prompt experiments and evaluation.
 
 ---
+
+
 
 # 23. Prompt Testing
 
@@ -599,6 +645,8 @@ Multiple test cases are important for evaluating prompt quality.
 
 ---
 
+
+
 # 24. Prompt Injection
 
 Prompt Injection happens when user input attempts to change the model's intended instructions.
@@ -627,6 +675,8 @@ are important.
 Security will be studied more deeply later in the roadmap.
 
 ---
+
+
 
 # 25. Prompt Engineering + RAG
 
@@ -659,6 +709,8 @@ This can help reduce unsupported answers, although it does not guarantee zero ha
 
 ---
 
+
+
 # 26. Prompt Engineering + Tools
 
 When using tool calling, prompts/model instructions can describe:
@@ -678,6 +730,8 @@ about a specific order status.
 Tool Calling will be studied in depth later.
 
 ---
+
+
 
 # 27. Prompt Engineering + Agents
 
@@ -711,7 +765,11 @@ Agents are later in our roadmap, so for now understand only this connection.
 
 ---
 
+
+
 # 28. Common Prompt Mistakes
+
+
 
 ### Mistake 1 – Vague instruction
 
@@ -725,6 +783,8 @@ Better:
 Explain this REST API code to a beginner
 in 5 bullet points.
 ```
+
+
 
 ### Mistake 2 – No output format
 
@@ -756,6 +816,8 @@ Prompt instructions are not a replacement for:
 - Backend security
 
 ---
+
+
 
 # 29. Prompt Engineering in Our Basic AI Chatbot
 
@@ -813,6 +875,8 @@ LLM
 
 ---
 
+
+
 # 30. LangChain Connection
 
 After understanding Prompt Engineering, we can introduce LangChain.
@@ -845,6 +909,8 @@ Focus only on the features that support our AI roadmap.
 
 ---
 
+
+
 # 31. LangSmith Connection
 
 LangSmith is mainly useful for:
@@ -872,6 +938,8 @@ LangSmith is **not the LLM** and **not a vector database**.
 
 ---
 
+
+
 # 32. Important Mental Model
 
 ```text
@@ -894,6 +962,8 @@ Validate Result
 
 ---
 
+
+
 # 33. Developer Checklist
 
 Before sending a prompt to an LLM, ask:
@@ -910,6 +980,8 @@ Before sending a prompt to an LLM, ask:
 - [ ] Could user input attempt prompt injection?
 
 ---
+
+
 
 # 34. What We Need to Practice
 
@@ -940,6 +1012,8 @@ Improve a vague prompt into a clear production-style prompt.
 Test the same prompt with normal and edge-case inputs.
 
 ---
+
+
 
 # 35. Final Summary
 
@@ -982,6 +1056,8 @@ Evaluation
         +
 Security
 ```
+
+
 
 ## Next Topic
 
