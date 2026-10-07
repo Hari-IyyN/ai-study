@@ -772,7 +772,7 @@ Keep the answer under 20 words.
 
 Conflicting requirements can produce poor results.
 
-### Mistake 5 – Depending only on prompts for security
+### Depending only on prompts for security
 
 Prompt instructions are not a replacement for:
 
